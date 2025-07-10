@@ -17,10 +17,10 @@ import { LinearButton } from '@/components/ui/Button';
 const getHeight = () => {
   const { height } = Dimensions.get('screen');
   if(height < 740){
-    return 525
+    return 450
   }else{
     if(Platform.OS === 'android'){
-      return 400
+      return 500
     }else{
       return 500
     }

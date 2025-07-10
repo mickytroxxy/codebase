@@ -21,7 +21,7 @@ const getHeight = () => {
     return 525
   }else{
     if(Platform.OS === 'android'){
-      return 400
+      return 500
     }else{
       return 500
     }
