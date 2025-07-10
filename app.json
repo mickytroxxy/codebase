@@ -1,0 +1,220 @@
+{
+  "expo": {
+    "name": "PlayMyJam",
+    "slug": "PlayMyJam",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo.png",
+    "scheme": "playmyjam",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": ["remote-notification"],
+        "NSCameraUsageDescription": "PlayMyJam needs access to your Camera to allow you to capture and share moments from your music experiences. This includes taking photos and videos of DJ performances, live events, and creating content for your profile. By enabling camera access, you'll be able to document and share your musical experiences with the community.",
+        "NSMicrophoneUsageDescription": "PlayMyJam needs access to your Microphone to enable audio recording for DJ performances, voice notes, and audio content creation for your music posts and activities.",
+        "NSPhotoLibraryUsageDescription": "PlayMyJam needs access to your Photo Library to let you select and upload photos related to your music experiences, DJ performances, and profile customization.",
+        "NSContactsUsageDescription": "PlayMyJam needs access to your Contacts to help you discover which of your friends are already using the app as DJs or music enthusiasts. For example, when you sync your contacts, we'll show you if your friend John is a DJ performing at local venues, allowing you to connect with them and request songs. This feature helps you find and connect with people you already know who share your passion for music.",
+        "NSLocationWhenInUseUsageDescription": "PlayMyJam needs access to your Location to help you discover nearby DJs, music venues, and live performances in your area. This includes finding DJs performing at clubs near you, connecting you with local music events, and ensuring accurate matching for live music experiences. Location access allows the app to provide personalized music recommendations based on your vicinity and helps you discover what's happening musically around you.",
+        "NSUserNotificationUsageDescription": "PlayMyJam needs access to Notifications to keep you informed about new song requests, DJ performances going live, club events, and when your friends start following you or interacting with your music content."
+      },
+      "bitcode": false,
+      "bundleIdentifier": "playmyjam.empiredigitals.org",
+      "entitlements": {
+        "aps-environment": "production",
+        "com.apple.security.application-groups": [
+          "group.playmyjam.empiredigitals.org.onesignal"
+        ]
+      }
+    },
+    "android": {
+      "package": "playmyjam.empiredigitals.org",
+      "notification": {
+        "icon": "./assets/images/logo.png"
+      },
+      "permissions": [
+        "CAMERA",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "RECORD_VIDEO",
+        "RECORD_AUDIO",
+        "LOCATION",
+        "READ_EXTERNAL_STORAGE",
+        "NOTIFICATIONS",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_MEDIA_LOCATION",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BIND_TELECOM_CONNECTION_SERVICE",
+        "android.permission.READ_PHONE_STATE",
+        "android.permission.CALL_PHONE",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.INTERNET",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.WAKE_LOCK",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "RECORD_VIDEO",
+        "RECORD_AUDIO",
+        "LOCATION",
+        "READ_EXTERNAL_STORAGE",
+        "NOTIFICATIONS",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_MEDIA_LOCATION",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BIND_TELECOM_CONNECTION_SERVICE",
+        "android.permission.READ_PHONE_STATE",
+        "android.permission.CALL_PHONE",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.INTERNET",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.WAKE_LOCK",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "versionCode": 10001,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAV7AyJHACZpiQwpTsof3siP4d25cU38Is"
+        }
+      },
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "onesignal-expo-plugin",
+        {
+          "mode": "development",
+          "smallIcons": [
+            "./assets/images/logo.png"
+          ],
+          "largeIcons": [
+            "./assets/images/logo.png"
+          ]
+        }
+      ],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-7273251331335061~4202453362",
+          "iosAppId": "ca-app-pub-7273251331335061~4809397258"
+        }
+      ],
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/logo.png",
+          "imageWidth": 260,
+          "resizeMode": "contain",
+          "backgroundColor": "#222240"
+        }
+      ],
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "PlayMyJam needs access to your Camera to capture and share your music experiences. This includes taking photos and videos of DJ performances, live music events, club visits, and creating content for your profile. By enabling camera access, you'll be able to document and share your musical journey with the community, connect with DJs, and showcase your music experiences.",
+          "enableMicrophonePermission": true,
+          "microphonePermissionText": "PlayMyJam needs access to your Microphone to enable audio recording for DJ performances, voice notes, and audio content creation for your music posts and DJ activities."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "PlayMyJam needs access to your Photo Library to let you select and upload photos related to your music experiences, DJ performances, and club events.",
+          "savePhotosPermission": "PlayMyJam needs access to your device memory to save music-related photos and videos from DJ performances and club events",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      "expo-video",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "PlayMyJam needs access to your Location to help you discover nearby DJs, music venues, and live performances in your area. This includes finding DJs performing at clubs near you, connecting you with local music events, and ensuring accurate matching for live music experiences. Location access allows the app to provide personalized music recommendations based on your vicinity and helps you discover what's happening musically around you."
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 24,
+            "usesCleartextTraffic": true,
+            "largeHeap": true
+          },
+          "ios": {
+            "deploymentTarget": "15.1"
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "oneSignalAppId": "e3e3f8d4-32c6-42dd-bc27-3145aad1017d",
+      "oneSignalRestApi": "os_v2_app_4pr7rvbsyzbn3pbhgfc2vuibpxhurzvha7nuzduo3iboh5jt3fy7vpaoljjsvp6fx5n37i5wz5xenymdwcl3v43zivzsnozihpg3uca",
+      "eas": {
+        "build": {
+          "experimental": {
+            "ios": {
+              "appExtensions": [
+                {
+                  "targetName": "OneSignalNotificationServiceExtension",
+                  "bundleIdentifier": "playmyjam.empiredigitals.org.OneSignalNotificationServiceExtension",
+                  "entitlements": {
+                    "com.apple.security.application-groups": [
+                      "group.playmyjam.empiredigitals.org.onesignal"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "projectId": "200489ce-98b4-4b23-b95c-c3408740237c"
+      }
+    },
+    "owner": "empiredigitals",
+    "runtimeVersion": {
+      "policy": "nativeVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/200489ce-98b4-4b23-b95c-c3408740237c"
+    }
+  }
+}

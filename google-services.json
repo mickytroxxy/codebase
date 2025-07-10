@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "222000269743",
+    "project_id": "playmyjam-5edf2",
+    "storage_bucket": "playmyjam-5edf2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222000269743:android:4e516e4fe7fe87fe45475a",
+        "android_client_info": {
+          "package_name": "playmyjam.empiredigitals.org"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222000269743-0m0b3rtn7veog1dknnv9fngj40tga031.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2vhxJfXMkRRBoISBr7BVmp4eSVbCkk6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222000269743-0m0b3rtn7veog1dknnv9fngj40tga031.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
