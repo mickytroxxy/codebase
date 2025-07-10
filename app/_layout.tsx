@@ -1,6 +1,6 @@
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
-import { Stack, useRouter } from 'expo-router';
+import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
@@ -67,7 +67,8 @@ const Main = () => {
           dispatch(setSecrets(secrets[0]))
         }
     })()
-},[])
+  },[])
+
   return (
     <RootSiblingParent>
       <View style={{flex:1}}>
@@ -83,10 +84,13 @@ const Main = () => {
             //headerLeft: () => (<TouchableOpacity onPress={() => router.back()} style={{marginRight:Platform.OS === 'android' ? 5 : 0,marginLeft:-10}}><Icon type="Feather" name="arrow-left-circle" size={30} color={colors.white} /></TouchableOpacity>)
           }}
         >
+          <Stack.Screen name="index" options={{ headerShown: false }} />
+          <Stack.Screen name="(auth)/login" options={{ headerShown: false }} />
+          <Stack.Screen name="(auth)/register" options={{ headerShown: false }} />
+          <Stack.Screen name="(auth)/ConfirmScreen" options={{ headerShown: false }} />
           <Stack.Screen name="(tabs)"  options={{ headerShown: false, headerTitle:'' }} />
           <Stack.Screen name="+not-found" />
-          <Stack.Screen name="(auth)/login" />
-          <Stack.Screen name="(auth)/register" />
+
         </Stack>
         {isFetching.state && <Loader text={isFetching.text}/>}
         <ModalController/>
