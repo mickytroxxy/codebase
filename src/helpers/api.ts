@@ -16,15 +16,19 @@ interface FirebaseConfig {
   storageBucket: string;
   messagingSenderId: string;
   appId: string;
+  databaseURL:string;
+  measurementId:string;
 }
 
 const firebaseConfig: FirebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: ""
+  apiKey: "AIzaSyCBDxXhRXOvW-UEMoTbz23UltqixPHCbt8",
+  authDomain: "inter-load-transfer360.firebaseapp.com",
+  databaseURL: "https://inter-load-transfer360-default-rtdb.firebaseio.com",
+  projectId: "inter-load-transfer360",
+  storageBucket: "inter-load-transfer360.firebasestorage.app",
+  messagingSenderId: "944832775425",
+  appId: "1:944832775425:web:8e670b26ec09e0c2a78700",
+  measurementId: "G-XQ1PVV9JNF"
 };
 
 const app = initializeApp(firebaseConfig);
